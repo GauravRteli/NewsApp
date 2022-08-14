@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Newsitem from "./Newsitem";
 import Spinner from "./spinner";
 import InfiniteScroll from "react-infinite-scroll-component";
+let articles = [];
 export class News extends Component {
   constructor() {
     super();
