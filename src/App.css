@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Piazzolla:opsz,wght@8..30,600&family=Ubuntu:wght@300;400&display=swap');
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -12,7 +16,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +31,28 @@
   color: #61dafb;
 }
 
+.card:hover{
+  
+  box-shadow: 2px 2px 10px #000;
+  background-color:#282c34;
+  color: white;
+
+}
+
+.btn{
+  transition: 0.5s;
+}
+.btn:hover{
+  transform: scale(1.1);
+}
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
