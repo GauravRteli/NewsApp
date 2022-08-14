@@ -50,13 +50,13 @@ export class News extends Component {
         <h1 className="text-center mt-4" id="Top-head" data-aos="zoom-in">
           Top HeadLines on {this.capitalize(this.props.category)}
         </h1>
-        <InfiniteScroll
-          dataLength={this.state.articles.length}
-          next={this.fetchMoreData}
-          hasMore={this.state.articles.length < this.state.totalResults}
-          loader={<Spinner />}
-          className="overflow-hidden"
-        >
+//         <InfiniteScroll
+//           dataLength={this.state.articles.length}
+//           next={this.fetchMoreData}
+//           hasMore={this.state.articles.length < this.state.totalResults}
+//           loader={<Spinner />}
+//           className="overflow-hidden"
+//         >
           <div className="container">
             <div className="row my-3">
               {!this.state.loading &&
@@ -77,7 +77,7 @@ export class News extends Component {
                 })}
             </div>
           </div>
-        </InfiniteScroll>
+//         </InfiniteScroll>
       </>
     );
   }
